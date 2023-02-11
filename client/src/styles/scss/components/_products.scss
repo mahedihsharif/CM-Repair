@@ -1,0 +1,207 @@
+.products {
+  padding-top: 100px;
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: $primary;
+  }
+  .lineCircle {
+    position: relative;
+  }
+
+  .lines::before {
+    content: "";
+    position: absolute;
+    width: 6.5%;
+    height: 1px;
+    left: 46.7%;
+    bottom: -9px;
+    background: $primary;
+  }
+  .lines::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 49.3%;
+    bottom: -13px;
+    background: $primary;
+  }
+  .circle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -13px;
+    background: $primary;
+  }
+  h1 {
+    color: $black;
+    font-family: Poppins;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px 0;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    border-bottom: 1px solid $primary;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 0;
+    li {
+      font-size: 18px;
+      font-family: "Poppins";
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .all {
+      color: $primary;
+      border: 1px solid $primary;
+      padding: 0.5rem 2rem;
+      border-radius: 5px;
+    }
+    .desktop {
+      padding: 0.5rem 2rem;
+      &:hover {
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .laptop {
+      padding: 0.5rem 2rem;
+      &:hover {
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .mobile {
+      padding: 0.5rem 2rem;
+      &:hover {
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .protector {
+      padding: 0.5rem 2rem;
+      &:hover {
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .card-container {
+    padding: 2rem 0;
+    position: relative;
+    .card-content {
+      cursor: pointer;
+      padding-bottom: 1rem;
+      box-shadow: rgba(120, 113, 114, 0.1) 0px 4px 16px,
+        rgba(142, 135, 136, 0.1) 0px 8px 24px,
+        rgba(139, 129, 130, 0.1) 0px 16px 56px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $primary !important;
+  }
+  .pagination {
+    padding-bottom: 4rem;
+    :global(.swiper-pagination-bullet) {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+      opacity: 1;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+      width: 4rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+  .swiper-button-prev {
+    background: url("../../../assets/images/left_arrow.png");
+    background-color: $primary;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 48.5%;
+  }
+  .swiper-button-next {
+    background: url("../../../assets/images/right_arrow.png");
+    background-color: $primary;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 48.5%;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper-button-next::after {
+    display: none;
+  }
+  .title {
+    font-weight: 600;
+    font-family: "Poppins";
+    font-size: 18px;
+    text-align: center;
+  }
+  .icons {
+    text-align: center;
+  }
+  .icon {
+    color: $primary;
+  }
+  .price {
+    color: $black;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  .button {
+    text-align: center;
+    button {
+      background-color: $black;
+      color: $white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-transform: capitalize;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: bolder;
+      .cart {
+        font-size: 20px;
+        margin-top: -3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.testimonial {
+  margin-top: 80px;
+  background: url("../../../assets/images/testimonial.png") no-repeat;
+  background-size: contain;
+  height: 70vh;
+  padding-top: 7rem;
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: $primary;
+  }
+  //line and circle start
+  .lineCircle {
+    position: relative;
+  }
+
+  .lines::before {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    height: 1px;
+    left: 0.3%;
+    bottom: -9px;
+    background: $primary;
+  }
+  .lines::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 3%;
+    bottom: -13px;
+    background: $primary;
+  }
+  .circle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 3.8%;
+    bottom: -13px;
+    background: $primary;
+  }
+  h2 {
+    color: $white;
+    padding: 2rem 0;
+    font-weight: 500;
+    font-family: "Poppins";
+  }
+  .card-container {
+    overflow-x: hidden;
+  }
+  .content {
+    width: 50%;
+    background: rgba(107, 114, 124, 0.4);
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  p {
+    color: $white;
+    font-weight: 300;
+    font-family: "Poppins";
+  }
+  h5 {
+    color: $white;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  h6 {
+    color: $primary;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+}

@@ -1,0 +1,133 @@
+.services {
+  padding-bottom: 50px;
+  h2 {
+    color: $black;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Poppins;
+    padding-bottom: 10px;
+    letter-spacing: 1.3;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: $primary;
+  }
+  //line and circle start
+  .lineCircle {
+    position: relative;
+  }
+
+  .lines::before {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    height: 1px;
+    left: 46.3%;
+    bottom: -9px;
+    background: $primary;
+  }
+  .lines::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 49.3%;
+    bottom: -13px;
+    background: $primary;
+  }
+  .circle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -13px;
+    background: $primary;
+  }
+  .card-container {
+    padding: 2rem 0;
+    .card-content {
+      position: relative;
+      cursor: pointer;
+      box-shadow: rgba(120, 113, 114, 0.1) 0px 4px 16px,
+        rgba(142, 135, 136, 0.1) 0px 8px 24px,
+        rgba(139, 129, 130, 0.1) 0px 16px 56px;
+      .title {
+        color: $black;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Poppins;
+      }
+      .text {
+        color: $text-color;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: Poppins;
+        padding: 1rem 0 2rem 0;
+      }
+      span {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        background: $white;
+        box-shadow: rgba(120, 113, 114, 0.1) 0px 4px 16px,
+          rgba(142, 135, 136, 0.1) 0px 8px 24px,
+          rgba(139, 129, 130, 0.1) 0px 16px 56px;
+        transform: translate(-50%, 0px);
+        height: 63px;
+        width: 63px;
+        border-radius: 50%;
+        line-height: 60px;
+        transition: 0.3s;
+        .image {
+          text-align: center;
+        }
+      }
+      :hover {
+        span {
+          background: #f6dfb6;
+        }
+        .footer-circle {
+          position: absolute;
+          left: 50%;
+          bottom: -4%;
+          background: url(../../../assets/images/arrow-right-short.svg)
+            no-repeat $primary;
+          background-size: 1.6rem;
+          background-position: center;
+          box-shadow: rgba(120, 113, 114, 0.1) 0px 4px 16px,
+            rgba(142, 135, 136, 0.1) 0px 8px 24px,
+            rgba(139, 129, 130, 0.1) 0px 16px 56px;
+          transform: translate(-50%, 0px);
+          height: 45px;
+          width: 45px;
+          border-radius: 50%;
+          line-height: 60px;
+          transition: 0.3s;
+        }
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $primary !important;
+    }
+    .pagination {
+      padding-bottom: 5rem;
+      :global(.swiper-pagination-bullet) {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+        opacity: 1;
+      }
+
+      :global(.swiper-pagination-bullet-active) {
+        width: 5rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

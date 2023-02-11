@@ -1,0 +1,94 @@
+.container {
+  position: relative;
+}
+
+.header-bottom-card {
+  position: absolute;
+  bottom: -105px;
+  z-index: 99999;
+  background: $white;
+
+  h4 {
+    color: $black;
+    margin-bottom: 0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  p {
+    color: $gray;
+    font-family: Poppins;
+    margin-top: 10px;
+  }
+  .common-card {
+    padding: 40px 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 5px 0px;
+    &:hover {
+      background: $primary;
+      transition: all 0.2s ease;
+      h4,
+      p {
+        color: $white;
+      }
+      .card-circle {
+        background: $light;
+        img {
+          animation: rotate 0.3s linear;
+          @keyframes rotate {
+            0% {
+              transform: rotateY(0deg);
+            }
+            50% {
+              transform: rotateY(180deg);
+            }
+            100% {
+              transform: rotateY(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .second-card {
+    background: $primary;
+    h4,
+    p {
+      color: $white;
+    }
+    .card-circle {
+      background: $light;
+    }
+    &:hover {
+      background: $white;
+      h4,
+      p {
+        color: $black;
+      }
+      .card-circle {
+        background: $light-primary;
+      }
+    }
+  }
+  .card-circle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: $light-primary;
+    margin: auto;
+    img {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+    }
+  }
+}
+
+//media qurey
+
+@media screen and (max-width: 768px) {
+  .header-bottom-card {
+    top: 70px;
+    gap: 20px;
+  }
+}

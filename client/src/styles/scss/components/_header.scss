@@ -1,0 +1,24 @@
+.header-container {
+  position: absolute;
+  background: $white;
+  padding: 58px 100px;
+}
+.sub-header-container {
+  background: $white;
+  position: absolute;
+  padding: 174px 60px;
+  z-index: 999;
+  left: 18%;
+  top: -11%;
+  transform: rotate(140deg);
+}
+
+//media quirey
+@media screen and (max-width: 1900px) {
+  .header-container {
+    display: none;
+  }
+  .sub-header-container {
+    display: none;
+  }
+}

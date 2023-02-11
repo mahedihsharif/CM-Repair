@@ -1,0 +1,115 @@
+.choose {
+  background: url(../../../assets/images/why-choose-us.png);
+  background-size: cover;
+  min-height: fit-content;
+  .background {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 12, 34, 0.8);
+    padding: 100px 0;
+  }
+  .lineCircle {
+    position: relative;
+  }
+
+  .lines::before {
+    content: "";
+    position: absolute;
+    width: 27.5%;
+    height: 1px;
+    left: 0.3%;
+    bottom: -9px;
+    background: $primary;
+  }
+  .lines::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 12.3%;
+    bottom: -13px;
+    background: $primary;
+  }
+  .circle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 13.7%;
+    bottom: -13px;
+    background: $primary;
+  }
+  h4 {
+    color: $primary;
+    font-family: Poppins;
+  }
+  h1 {
+    color: $white;
+    font-family: Poppins;
+  }
+  p {
+    color: $white;
+    font-family: Poppins;
+    padding: 1rem 0;
+    width: 90%;
+  }
+  .choose-card {
+    background: rgba($gray, 0.3);
+
+    h5 {
+      color: $white;
+      font-family: Poppins;
+      text-align: center;
+    }
+  }
+  button {
+    padding: 18px 25px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+    background: $primary;
+    border: none;
+    margin-top: 40px;
+    font-family: Poppins;
+  }
+  .leftCards {
+    background: $blue;
+    padding: 1rem;
+    cursor: pointer;
+    h5,
+    p {
+      color: $white;
+      font-family: Poppins;
+    }
+    &:hover {
+      background: $primary;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .rightCards {
+    background: $white;
+    padding: 1rem;
+    cursor: pointer;
+    h5,
+    p {
+      color: $black;
+      font-family: Poppins;
+    }
+    &:hover {
+      background: $primary;
+      transition: all 0.3s ease-in-out;
+      h5,
+      p {
+        color: $white;
+      }
+    }
+  }
+  .right-part {
+    margin-top: -1.5rem;
+  }
+}

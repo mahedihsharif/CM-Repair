@@ -1,0 +1,48 @@
+.topBar {
+  background: $black;
+  color: $light;
+  .topBar-sub-container {
+    margin-left: 20%;
+  }
+  // .right {
+  //   margin-right: 100px;
+  // }
+  .left-border {
+    width: 30px;
+    height: 2px;
+    background: $white;
+    transform: rotate(90deg);
+    margin-top: 15px;
+  }
+
+  .icons {
+    font-size: 18px;
+  }
+  //   .icons:hover {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     border-radius: 50%;
+  //     width: 30px;
+  //     height: 30px;
+  //     color: $primary;
+  //     border: 1px solid $primary;
+  //   }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: $primary;
+    border: 1px solid $primary;
+  }
+}
+
+//media quirey
+@media screen and (max-width: 1168px) {
+  .topBar {
+    display: none;
+  }
+}

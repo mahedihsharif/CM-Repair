@@ -1,0 +1,146 @@
+.blog {
+  padding: 100px 0;
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: $primary;
+  }
+  .lineCircle {
+    position: relative;
+  }
+  .lines::before {
+    content: "";
+    position: absolute;
+    width: 3.8%;
+    height: 1px;
+    left: 48.1%;
+    bottom: -9px;
+    background: $primary;
+  }
+  .lines::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 49.3%;
+    bottom: -13px;
+    background: $primary;
+  }
+  .circle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -13px;
+    background: $primary;
+  }
+  h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .card-container {
+    padding-top: 4rem;
+    .card-content {
+      box-shadow: rgba(120, 113, 114, 0.1) 0px 4px 16px,
+        rgba(142, 135, 136, 0.1) 0px 8px 24px,
+        rgba(139, 129, 130, 0.1) 0px 16px 56px;
+      .image-card {
+        position: relative;
+        .image-content {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background: $white;
+          padding: 0 1rem;
+          border-radius: 0px 20px 0px 0px;
+          .icon {
+            color: $primary;
+            font-size: 20px;
+          }
+          p {
+            margin-top: 19px;
+            color: $primary;
+            font-weight: 500;
+            font-family: "Poppins";
+          }
+        }
+      }
+      .title {
+        font-size: 20px;
+        color: $black;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding-left: 8px;
+        &:hover {
+          text-decoration: underline;
+          color: $primary;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+      }
+      .text {
+        color: $text-color;
+        font-family: "Poppins";
+        font-size: 15px;
+        padding: 8px 0px 8px 8px;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h6 {
+          font-size: 16px;
+          font-weight: 600;
+          color: $black;
+          font-family: "Poppins";
+          padding-left: 8px;
+          &:hover {
+            color: $primary;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          .right-icon {
+            color: $primary;
+            font-size: 18px;
+          }
+        }
+        p {
+          font-size: 16px;
+          color: $text-color;
+          font-family: "Poppins";
+          padding-right: 8px;
+          cursor: pointer;
+          .comment-icon {
+            color: $primary;
+          }
+        }
+      }
+    }
+    .pagination {
+      padding-bottom: 5rem;
+      :global(.swiper-pagination-bullet) {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+        opacity: 1;
+      }
+
+      :global(.swiper-pagination-bullet-active) {
+        width: 5rem;
+        height: 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
